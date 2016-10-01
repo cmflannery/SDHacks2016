@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		768B1F441DA03D50009D4447 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B1F431DA03D50009D4447 /* AppDelegate.swift */; };
+		768B1F491DA03D50009D4447 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768B1F471DA03D50009D4447 /* Main.storyboard */; };
+		768B1F4B1DA03D50009D4447 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 768B1F4A1DA03D50009D4447 /* Assets.xcassets */; };
+		768B1F4E1DA03D50009D4447 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768B1F4C1DA03D50009D4447 /* LaunchScreen.storyboard */; };
+		768B1F591DA03D50009D4447 /* DocusignGPSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B1F581DA03D50009D4447 /* DocusignGPSTests.swift */; };
+		768B1F641DA03D50009D4447 /* DocusignGPSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B1F631DA03D50009D4447 /* DocusignGPSUITests.swift */; };
+		768B1F721DA03DC7009D4447 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 768B1F711DA03DC7009D4447 /* GoogleService-Info.plist */; };
+		768B1F781DA03F2F009D4447 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B1F771DA03F2F009D4447 /* TableViewController.swift */; };
+		768B1F7A1DA04A7A009D4447 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B1F791DA04A7A009D4447 /* TableViewCell.swift */; };
+		768B1F7E1DA04C81009D4447 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B1F7D1DA04C81009D4447 /* NewViewController.swift */; };
+		8C5AD0F8743430803A506185 /* Pods_DocusignGPS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12D9B72041A9964C69CDA8E /* Pods_DocusignGPS.framework */; };
+		AE873DA397A02E3DE7A9748D /* Pods_DocusignGPSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C915CC57775B16304A6F3080 /* Pods_DocusignGPSTests.framework */; };
+		F47997FFB9B13C812D61840B /* Pods_DocusignGPSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178DED406A4A95756FFC602C /* Pods_DocusignGPSUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		768B1F551DA03D50009D4447 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 768B1F381DA03D50009D4447 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 768B1F3F1DA03D50009D4447;
+			remoteInfo = DocusignGPS;
+		};
+		768B1F601DA03D50009D4447 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 768B1F381DA03D50009D4447 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 768B1F3F1DA03D50009D4447;
+			remoteInfo = DocusignGPS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		112416893072712DC39344C3 /* Pods-DocusignGPSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocusignGPSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DocusignGPSUITests/Pods-DocusignGPSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		178DED406A4A95756FFC602C /* Pods_DocusignGPSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DocusignGPSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53CC8FDE2041C27F8A22C3D7 /* Pods-DocusignGPS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocusignGPS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DocusignGPS/Pods-DocusignGPS.debug.xcconfig"; sourceTree = "<group>"; };
+		69B9AC8E8F014FD82A976DFB /* Pods-DocusignGPSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocusignGPSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DocusignGPSTests/Pods-DocusignGPSTests.release.xcconfig"; sourceTree = "<group>"; };
+		768B1F401DA03D50009D4447 /* DocusignGPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocusignGPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		768B1F431DA03D50009D4447 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		768B1F481DA03D50009D4447 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		768B1F4A1DA03D50009D4447 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		768B1F4D1DA03D50009D4447 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		768B1F4F1DA03D50009D4447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		768B1F541DA03D50009D4447 /* DocusignGPSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocusignGPSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		768B1F581DA03D50009D4447 /* DocusignGPSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocusignGPSTests.swift; sourceTree = "<group>"; };
+		768B1F5A1DA03D50009D4447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		768B1F5F1DA03D50009D4447 /* DocusignGPSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocusignGPSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		768B1F631DA03D50009D4447 /* DocusignGPSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocusignGPSUITests.swift; sourceTree = "<group>"; };
+		768B1F651DA03D50009D4447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		768B1F711DA03DC7009D4447 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		768B1F771DA03F2F009D4447 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		768B1F791DA04A7A009D4447 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		768B1F7D1DA04C81009D4447 /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		7DA037E6AB3B7422C8218DD7 /* Pods-DocusignGPSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocusignGPSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DocusignGPSTests/Pods-DocusignGPSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C915CC57775B16304A6F3080 /* Pods_DocusignGPSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DocusignGPSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE871BAFB23564771DCCFB29 /* Pods-DocusignGPS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocusignGPS.release.xcconfig"; path = "Pods/Target Support Files/Pods-DocusignGPS/Pods-DocusignGPS.release.xcconfig"; sourceTree = "<group>"; };
+		DD7D2F5EC133551A96154967 /* Pods-DocusignGPSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocusignGPSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DocusignGPSUITests/Pods-DocusignGPSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E12D9B72041A9964C69CDA8E /* Pods_DocusignGPS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DocusignGPS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		768B1F3D1DA03D50009D4447 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C5AD0F8743430803A506185 /* Pods_DocusignGPS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768B1F511DA03D50009D4447 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE873DA397A02E3DE7A9748D /* Pods_DocusignGPSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768B1F5C1DA03D50009D4447 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47997FFB9B13C812D61840B /* Pods_DocusignGPSUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D4D2E2EDDF68E2D9170A03C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E12D9B72041A9964C69CDA8E /* Pods_DocusignGPS.framework */,
+				C915CC57775B16304A6F3080 /* Pods_DocusignGPSTests.framework */,
+				178DED406A4A95756FFC602C /* Pods_DocusignGPSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		768B1F371DA03D50009D4447 = {
+			isa = PBXGroup;
+			children = (
+				768B1F421DA03D50009D4447 /* DocusignGPS */,
+				768B1F571DA03D50009D4447 /* DocusignGPSTests */,
+				768B1F621DA03D50009D4447 /* DocusignGPSUITests */,
+				768B1F411DA03D50009D4447 /* Products */,
+				9D175E14FE248BA1EB528B64 /* Pods */,
+				2D4D2E2EDDF68E2D9170A03C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		768B1F411DA03D50009D4447 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				768B1F401DA03D50009D4447 /* DocusignGPS.app */,
+				768B1F541DA03D50009D4447 /* DocusignGPSTests.xctest */,
+				768B1F5F1DA03D50009D4447 /* DocusignGPSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		768B1F421DA03D50009D4447 /* DocusignGPS */ = {
+			isa = PBXGroup;
+			children = (
+				768B1F771DA03F2F009D4447 /* TableViewController.swift */,
+				768B1F431DA03D50009D4447 /* AppDelegate.swift */,
+				768B1F471DA03D50009D4447 /* Main.storyboard */,
+				768B1F791DA04A7A009D4447 /* TableViewCell.swift */,
+				768B1F7D1DA04C81009D4447 /* NewViewController.swift */,
+				768B1F4A1DA03D50009D4447 /* Assets.xcassets */,
+				768B1F4C1DA03D50009D4447 /* LaunchScreen.storyboard */,
+				768B1F4F1DA03D50009D4447 /* Info.plist */,
+				768B1F711DA03DC7009D4447 /* GoogleService-Info.plist */,
+			);
+			path = DocusignGPS;
+			sourceTree = "<group>";
+		};
+		768B1F571DA03D50009D4447 /* DocusignGPSTests */ = {
+			isa = PBXGroup;
+			children = (
+				768B1F581DA03D50009D4447 /* DocusignGPSTests.swift */,
+				768B1F5A1DA03D50009D4447 /* Info.plist */,
+			);
+			path = DocusignGPSTests;
+			sourceTree = "<group>";
+		};
+		768B1F621DA03D50009D4447 /* DocusignGPSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				768B1F631DA03D50009D4447 /* DocusignGPSUITests.swift */,
+				768B1F651DA03D50009D4447 /* Info.plist */,
+			);
+			path = DocusignGPSUITests;
+			sourceTree = "<group>";
+		};
+		9D175E14FE248BA1EB528B64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53CC8FDE2041C27F8A22C3D7 /* Pods-DocusignGPS.debug.xcconfig */,
+				CE871BAFB23564771DCCFB29 /* Pods-DocusignGPS.release.xcconfig */,
+				7DA037E6AB3B7422C8218DD7 /* Pods-DocusignGPSTests.debug.xcconfig */,
+				69B9AC8E8F014FD82A976DFB /* Pods-DocusignGPSTests.release.xcconfig */,
+				DD7D2F5EC133551A96154967 /* Pods-DocusignGPSUITests.debug.xcconfig */,
+				112416893072712DC39344C3 /* Pods-DocusignGPSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		768B1F3F1DA03D50009D4447 /* DocusignGPS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 768B1F681DA03D50009D4447 /* Build configuration list for PBXNativeTarget "DocusignGPS" */;
+			buildPhases = (
+				EE205B95CEC894F402C2F886 /* [CP] Check Pods Manifest.lock */,
+				768B1F3C1DA03D50009D4447 /* Sources */,
+				768B1F3D1DA03D50009D4447 /* Frameworks */,
+				768B1F3E1DA03D50009D4447 /* Resources */,
+				E2B3823F78851F5A192B2F6E /* [CP] Embed Pods Frameworks */,
+				3986B4C66DCE53C497EC2F20 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DocusignGPS;
+			productName = DocusignGPS;
+			productReference = 768B1F401DA03D50009D4447 /* DocusignGPS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		768B1F531DA03D50009D4447 /* DocusignGPSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 768B1F6B1DA03D50009D4447 /* Build configuration list for PBXNativeTarget "DocusignGPSTests" */;
+			buildPhases = (
+				F113DCA2436ECF08F263546D /* [CP] Check Pods Manifest.lock */,
+				768B1F501DA03D50009D4447 /* Sources */,
+				768B1F511DA03D50009D4447 /* Frameworks */,
+				768B1F521DA03D50009D4447 /* Resources */,
+				221239ED33BD32A914305FAB /* [CP] Embed Pods Frameworks */,
+				E55976B4062DCF5B06336702 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				768B1F561DA03D50009D4447 /* PBXTargetDependency */,
+			);
+			name = DocusignGPSTests;
+			productName = DocusignGPSTests;
+			productReference = 768B1F541DA03D50009D4447 /* DocusignGPSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		768B1F5E1DA03D50009D4447 /* DocusignGPSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 768B1F6E1DA03D50009D4447 /* Build configuration list for PBXNativeTarget "DocusignGPSUITests" */;
+			buildPhases = (
+				587D75612AC573F54791946B /* [CP] Check Pods Manifest.lock */,
+				768B1F5B1DA03D50009D4447 /* Sources */,
+				768B1F5C1DA03D50009D4447 /* Frameworks */,
+				768B1F5D1DA03D50009D4447 /* Resources */,
+				3468D93D3E939675529260E5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				768B1F611DA03D50009D4447 /* PBXTargetDependency */,
+			);
+			name = DocusignGPSUITests;
+			productName = DocusignGPSUITests;
+			productReference = 768B1F5F1DA03D50009D4447 /* DocusignGPSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		768B1F381DA03D50009D4447 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = SDHacks;
+				TargetAttributes = {
+					768B1F3F1DA03D50009D4447 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6JH842GXC8;
+						ProvisioningStyle = Automatic;
+					};
+					768B1F531DA03D50009D4447 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 768B1F3F1DA03D50009D4447;
+					};
+					768B1F5E1DA03D50009D4447 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 768B1F3F1DA03D50009D4447;
+					};
+				};
+			};
+			buildConfigurationList = 768B1F3B1DA03D50009D4447 /* Build configuration list for PBXProject "DocusignGPS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 768B1F371DA03D50009D4447;
+			productRefGroup = 768B1F411DA03D50009D4447 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				768B1F3F1DA03D50009D4447 /* DocusignGPS */,
+				768B1F531DA03D50009D4447 /* DocusignGPSTests */,
+				768B1F5E1DA03D50009D4447 /* DocusignGPSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		768B1F3E1DA03D50009D4447 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				768B1F4E1DA03D50009D4447 /* LaunchScreen.storyboard in Resources */,
+				768B1F721DA03DC7009D4447 /* GoogleService-Info.plist in Resources */,
+				768B1F4B1DA03D50009D4447 /* Assets.xcassets in Resources */,
+				768B1F491DA03D50009D4447 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768B1F521DA03D50009D4447 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768B1F5D1DA03D50009D4447 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		221239ED33BD32A914305FAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DocusignGPSTests/Pods-DocusignGPSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3468D93D3E939675529260E5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DocusignGPSUITests/Pods-DocusignGPSUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3986B4C66DCE53C497EC2F20 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DocusignGPS/Pods-DocusignGPS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		587D75612AC573F54791946B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E2B3823F78851F5A192B2F6E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DocusignGPS/Pods-DocusignGPS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E55976B4062DCF5B06336702 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DocusignGPSTests/Pods-DocusignGPSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE205B95CEC894F402C2F886 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F113DCA2436ECF08F263546D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		768B1F3C1DA03D50009D4447 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				768B1F7A1DA04A7A009D4447 /* TableViewCell.swift in Sources */,
+				768B1F441DA03D50009D4447 /* AppDelegate.swift in Sources */,
+				768B1F781DA03F2F009D4447 /* TableViewController.swift in Sources */,
+				768B1F7E1DA04C81009D4447 /* NewViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768B1F501DA03D50009D4447 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				768B1F591DA03D50009D4447 /* DocusignGPSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768B1F5B1DA03D50009D4447 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				768B1F641DA03D50009D4447 /* DocusignGPSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		768B1F561DA03D50009D4447 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 768B1F3F1DA03D50009D4447 /* DocusignGPS */;
+			targetProxy = 768B1F551DA03D50009D4447 /* PBXContainerItemProxy */;
+		};
+		768B1F611DA03D50009D4447 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 768B1F3F1DA03D50009D4447 /* DocusignGPS */;
+			targetProxy = 768B1F601DA03D50009D4447 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		768B1F471DA03D50009D4447 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				768B1F481DA03D50009D4447 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		768B1F4C1DA03D50009D4447 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				768B1F4D1DA03D50009D4447 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		768B1F661DA03D50009D4447 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		768B1F671DA03D50009D4447 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		768B1F691DA03D50009D4447 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53CC8FDE2041C27F8A22C3D7 /* Pods-DocusignGPS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6JH842GXC8;
+				INFOPLIST_FILE = DocusignGPS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SDHacks.DocusignGPS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		768B1F6A1DA03D50009D4447 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE871BAFB23564771DCCFB29 /* Pods-DocusignGPS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6JH842GXC8;
+				INFOPLIST_FILE = DocusignGPS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SDHacks.DocusignGPS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		768B1F6C1DA03D50009D4447 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DA037E6AB3B7422C8218DD7 /* Pods-DocusignGPSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DocusignGPSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SDHacks.DocusignGPSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DocusignGPS.app/DocusignGPS";
+			};
+			name = Debug;
+		};
+		768B1F6D1DA03D50009D4447 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69B9AC8E8F014FD82A976DFB /* Pods-DocusignGPSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DocusignGPSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SDHacks.DocusignGPSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DocusignGPS.app/DocusignGPS";
+			};
+			name = Release;
+		};
+		768B1F6F1DA03D50009D4447 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD7D2F5EC133551A96154967 /* Pods-DocusignGPSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DocusignGPSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SDHacks.DocusignGPSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DocusignGPS;
+			};
+			name = Debug;
+		};
+		768B1F701DA03D50009D4447 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 112416893072712DC39344C3 /* Pods-DocusignGPSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DocusignGPSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SDHacks.DocusignGPSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DocusignGPS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		768B1F3B1DA03D50009D4447 /* Build configuration list for PBXProject "DocusignGPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				768B1F661DA03D50009D4447 /* Debug */,
+				768B1F671DA03D50009D4447 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		768B1F681DA03D50009D4447 /* Build configuration list for PBXNativeTarget "DocusignGPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				768B1F691DA03D50009D4447 /* Debug */,
+				768B1F6A1DA03D50009D4447 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		768B1F6B1DA03D50009D4447 /* Build configuration list for PBXNativeTarget "DocusignGPSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				768B1F6C1DA03D50009D4447 /* Debug */,
+				768B1F6D1DA03D50009D4447 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		768B1F6E1DA03D50009D4447 /* Build configuration list for PBXNativeTarget "DocusignGPSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				768B1F6F1DA03D50009D4447 /* Debug */,
+				768B1F701DA03D50009D4447 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 768B1F381DA03D50009D4447 /* Project object */;
+}

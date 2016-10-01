@@ -1,0 +1,6 @@
+framework module Pods_DocusignGPS {
+  umbrella header "Pods-DocusignGPS-umbrella.h"
+
+  export *
+  module * { export * }
+}
