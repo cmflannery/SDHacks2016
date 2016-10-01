@@ -1,0 +1,7 @@
+gps authentification for docusign
+-only verify documents when working inside main office
+
+Two-factor authentification for off-campus working
+-verify gps signal with gps from work gps signal
+
+Only single verification needed for on-campus signatures
