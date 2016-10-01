@@ -7,6 +7,8 @@ target 'DocusignGPS' do
 
   # Pods for DocusignGPS
   pod ‘Firebase’
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
   target 'DocusignGPSTests' do
     inherit! :search_paths

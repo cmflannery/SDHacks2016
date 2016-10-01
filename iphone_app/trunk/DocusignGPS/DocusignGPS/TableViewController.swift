@@ -7,18 +7,39 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseDatabase
+import FirebaseAuth
 import CoreLocation
 
 class TableViewController: UITableViewController, CLLocationManagerDelegate {
     
+    // Firebase stuff
+    var dbRef:FIRDatabaseReference!
+
+    // static for now, can add user functionality later
+    var userEmail: String = "cameron.m.flanery@gmail.com"
+    var password: String = "sdhacks2016"
+    
+    // Location Stuff
     let locationManager = CLLocationManager()
+    
+    var seenError : Bool = false
+    var locationFixAchieved : Bool = false
+    var locationStatus : NSString = "Not Started"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // Firebase
+        authenticateUsers()
+        
+        
+        // Location Setup
         locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingHeading()
+        locationManager.requestLocation()
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -26,6 +47,35 @@ class TableViewController: UITableViewController, CLLocationManagerDelegate {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    // Firebase Funcs
+    // authentication
+    func authenticateUsers(){
+        FIRAuth.auth()?.signIn(withEmail: self.userEmail, password: self.password, completion: { (user: FIRUser?, error: Error?) in
+            if error != nil {
+                print(error?.localizedDescription)
+            }
+        })
+    }
+    
+    // Location Funcs
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("failed")
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if (locationFixAchieved == false) {
+            locationFixAchieved = true
+            let locationArray = locations as NSArray
+            let locationObj = locationArray.lastObject as! CLLocation
+            let coord = locationObj.coordinate
+            
+            
+            print("printing coords")
+            print(coord.latitude)
+            print(coord.longitude)
+        }
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
