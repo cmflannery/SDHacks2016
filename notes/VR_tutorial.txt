@@ -1,0 +1,50 @@
+make sure you are reaching your targeted audience
+
+good areas for VR right now:
+-medical
+-empathy machine
+ -possible use cases outside of medical
+ -demonstrate depression
+
+-education
+ -immersive learning
+
+-defense
+ -Spawar
+ -drones
+
+-social?
+ -dont do this
+
+-fractional design?
+
+-completely immersed
+ -want people to feel like they are at the location
+
+-**Never take control away from the user**
+-dont move without the user moving
+-teleport around
+ -"Close eyes?"
+ -HTC Vibe?
+
+-course or vehicle
+-moving around
+
+-camera rotation
+ -don't change perspective of user
+ -breaks immersion
+
+-never take control away from the persons perspective
+
+-Ground the camera?
+-parallax
+
+-gaze interaction
+ -trigger by looking in a certain direction
+
+-looking is a form of input
+-avoid mouse and keyboard
+
+
+
+

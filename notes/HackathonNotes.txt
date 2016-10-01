@@ -1,0 +1,24 @@
+UCSD
+$1000 prize for team with best "commercial solution"
+
+Qualcomm Dragon Board Hack
+-win dragon board
+-best use?
+
+Twitch
+-add fun content to the screen
+-web scraping?
+-interesting meme
+-conversation starters
+-"creating fun"
+-prizes
+ -1st: $300 each
+ -2nd: $150 each
+ -3rd: $50 each
+
+ Docusign API
+ -signature integrated into it
+ -prizes
+  -Phamton 3
+  -amazon echo
+ 
