@@ -1,6 +1,0 @@
-#surefire_0
-#Sat Oct 01 21:44:45 PDT 2016
-user.dir=/Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client
-localRepository=/Users/cflannery-MBP/.m2/repository
-loggerPath=conf/log4j.properties
-basedir=/Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client

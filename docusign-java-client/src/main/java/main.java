@@ -6,12 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.awt.Desktop;
-import junit.framework.Assert;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+
 import java.util.List;
 import java.util.ArrayList;
 
@@ -26,11 +21,28 @@ import java.util.Set;
 
 import java.net.URI;
 
+import javafx.application.Application;
+import javafx.scene.layout.*;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.stage.Stage;
+import javafx.scene.control.Button;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.StackPane; 
+import javafx.scene.Scene; 
+import javafx.scene.text.Text;
 
 
 
-public class main {
+public class main extends Application implements EventHandler <ActionEvent> {
 	
+        boolean gate1 = false;
+        boolean gate2 = false;
+        boolean gate3 = false;
+        
+        Button button1;
+        Button button2; 
+        Button button3; 
 	 public static final String UserName = "cameron.m.flannery@gmail.com";
 	 public static final String Password = "sdhacks2016";
 	 public static final String IntegratorKey = "bac3326a-8237-4648-aac9-e055ab2cf7c7";
@@ -49,13 +61,93 @@ public class main {
 	
 	public static void main (String[] args){
 		
-		main m = new main();
-		m.LoginTest();
-		m.EmbeddedSigningTest(); 
+		
+                launch (args);
+                
 		
 		
 		
 		
+	}
+        
+    @Override
+    public void start (Stage primaryStage) throws Exception {
+        primaryStage.setTitle ("GPS Signing Beta");
+        
+        
+        
+        button1 = new Button ();
+        Text txt = new Text ();
+        txt.setText("Welcome. Please press begin");
+        button1.setText ("Begin");
+        button1.setOnAction (this);
+        button1.setMinSize(100, 100);
+        
+        BorderPane p = new BorderPane ();
+        p.setCenter (txt);
+        p.setTop(button1);
+  
+        
+        Scene scene = new Scene (p, 500, 500);
+        primaryStage.setScene(scene);
+        primaryStage.show();
+        
+        main m = new main();
+        m.LoginTest();
+		
+        String GPS = m.getGPS();
+        boolean check = m.GPSCheck(GPS);
+		
+        if (check == true){
+            //m.EmbeddedSigningTest();
+	}
+    }
+        
+    @Override
+    public void handle (ActionEvent event){
+        
+        if (event.getSource() == button1){
+            System.out.println("I have been pressed");
+        }
+        
+    }
+	
+	
+	public String getGPS (){
+		/*
+		 * Acquire signal from GPS device 
+		 */
+		
+		
+		return "32.885, -117.239"; 
+	}
+	
+	
+	public boolean GPSCheck (String GPS) {
+		
+		/*
+		 * Parse for two doubles (long and lat)
+		 */
+		
+		double HQCoordX = 32.885320;
+		double HQCoordY = -117.239718;
+		
+		int commaIndex = GPS.indexOf(",");
+		String GPSx = GPS.substring(0,commaIndex);
+		String GPSy = GPS.substring(commaIndex+2);
+		Double GPSNumX = Double.parseDouble(GPSx);
+		Double GPSNumY = Double.parseDouble(GPSy);
+		
+		System.out.println(GPSNumX);
+		System.out.println(GPSNumY);
+				
+		
+		
+		if((GPSNumX <= (HQCoordX + 0.1)) && (GPSNumX >= (HQCoordX - 0.1)) 
+				&& (GPSNumY <= (HQCoordY + 0.1)) && (GPSNumY >= (HQCoordY - 0.1))){
+			return true;
+		}
+		return false;
 	}
 	
 	
@@ -98,11 +190,9 @@ public class main {
 	            loginOps.setIncludeAccountIdGuid("true");
 	            LoginInformation loginInfo = authApi.login(loginOps);
 	            
-	            Assert.assertNotSame(null, loginInfo);
-	            Assert.assertNotNull(loginInfo.getLoginAccounts());
-	            Assert.assertTrue(loginInfo.getLoginAccounts().size() > 0);
+	          
 	            List<LoginAccount> loginAccounts = loginInfo.getLoginAccounts();
-	            Assert.assertNotNull(loginAccounts.get(0).getAccountId());
+	            
 	            
 	            System.out.println("LoginInformation: " + loginInfo);
 	        }
@@ -127,7 +217,7 @@ public class main {
         }
         catch (IOException ioExcp)
         {
-            Assert.assertEquals(null, ioExcp);
+            
         }
         
         
@@ -197,19 +287,16 @@ public class main {
             AuthenticationApi authApi = new AuthenticationApi();
             LoginInformation loginInfo = authApi.login();
             
-            Assert.assertNotSame(null, loginInfo);
-            Assert.assertNotNull(loginInfo.getLoginAccounts());
-            Assert.assertTrue(loginInfo.getLoginAccounts().size() > 0);
+           
             List<LoginAccount> loginAccounts = loginInfo.getLoginAccounts();
-            Assert.assertNotNull(loginAccounts.get(0).getAccountId());
+           
             
             String accountId = loginInfo.getLoginAccounts().get(0).getAccountId();
             
             EnvelopesApi envelopesApi = new EnvelopesApi();
             EnvelopeSummary envelopeSummary = envelopesApi.createEnvelope(accountId, envDef);
             
-            Assert.assertNotNull(envelopeSummary);
-            Assert.assertNotNull(envelopeSummary.getEnvelopeId());
+            
             
             System.out.println("EnvelopeSummary: " + envelopeSummary);
             
@@ -223,8 +310,7 @@ public class main {
             
             ViewUrl viewUrl = envelopesApi.createRecipientView(loginInfo.getLoginAccounts().get(0).getAccountId(), envelopeSummary.getEnvelopeId(), recipientView);
             
-            Assert.assertNotNull(viewUrl);
-            Assert.assertNotNull(viewUrl.getUrl());
+           
             
             // This Url should work in an Iframe or browser to allow signing
             System.out.println(viewUrl.url);
@@ -241,7 +327,7 @@ public class main {
         catch (ApiException ex)
         {
             System.out.println("Exception: " + ex);
-            Assert.assertEquals(null, ex);
+           
         }
         
     }    
