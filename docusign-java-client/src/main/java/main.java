@@ -31,18 +31,28 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.StackPane; 
 import javafx.scene.Scene; 
 import javafx.scene.text.Text;
-
+import javafx.scene.layout.VBox;
+import javafx.scene.layout.HBox;
 
 
 public class main extends Application implements EventHandler <ActionEvent> {
 	
+        Stage primaryStage = new Stage();
+        BorderPane p = new BorderPane ();
+        VBox buttons = new VBox();
+        VBox textMessage = new VBox();
         boolean gate1 = false;
         boolean gate2 = false;
         boolean gate3 = false;
+        main m;
+        Text txt1 = new Text ();
+        Text txt2 = new Text ();
+        Text txt3 = new Text();
         
-        Button button1;
-        Button button2; 
-        Button button3; 
+        Button button1 = new Button();
+        Button button2 = new Button(); 
+        Button button3 = new Button();
+        
 	 public static final String UserName = "cameron.m.flannery@gmail.com";
 	 public static final String Password = "sdhacks2016";
 	 public static final String IntegratorKey = "bac3326a-8237-4648-aac9-e055ab2cf7c7";
@@ -60,54 +70,94 @@ public class main extends Application implements EventHandler <ActionEvent> {
 
 	
 	public static void main (String[] args){
-		
-		
-                launch (args);
-                
-		
-		
-		
-		
+                launch (args);	
 	}
         
     @Override
-    public void start (Stage primaryStage) throws Exception {
+    public void start (Stage secondaryStage) throws Exception {
+        
+        m = new main();
         primaryStage.setTitle ("GPS Signing Beta");
         
+         
+        buttons.setSpacing(10);
         
-        
-        button1 = new Button ();
-        Text txt = new Text ();
-        txt.setText("Welcome. Please press begin");
-        button1.setText ("Begin");
+        txt1.setText("Welcome. Please log in");
+        txt2.setText("");
+        txt3.setText("");
+        textMessage.setSpacing(50);
+        textMessage.getChildren().addAll(txt1, txt2,txt3);
+       
+        button1.setText ("Log in");
         button1.setOnAction (this);
         button1.setMinSize(100, 100);
         
-        BorderPane p = new BorderPane ();
-        p.setCenter (txt);
-        p.setTop(button1);
-  
+        button2.setText("GPS");
+        button2.setMinSize(100,100);
+        button2.setOnAction(this);
         
-        Scene scene = new Scene (p, 500, 500);
+        button3.setText("Sign Document");
+        button3.setMinSize(100, 100);
+        button3.setOnAction(this);
+        
+        
+        
+        buttons.getChildren().addAll(button1, button2, button3);
+        
+        
+        p.setCenter (textMessage);
+        p.setLeft(buttons);
+        
+       
+        Scene scene = new Scene (p, 500, 350);
         primaryStage.setScene(scene);
         primaryStage.show();
         
-        main m = new main();
-        m.LoginTest();
-		
-        String GPS = m.getGPS();
-        boolean check = m.GPSCheck(GPS);
-		
-        if (check == true){
-            //m.EmbeddedSigningTest();
-	}
+        
+        
+        
+	
+        
+        
+        
+        
+        
+        
+        	
+        
+	
     }
         
     @Override
     public void handle (ActionEvent event){
         
         if (event.getSource() == button1){
-            System.out.println("I have been pressed");
+            if (gate1 == false){
+                m.LoginTest();
+                gate1 = true;
+                txt2.setText("Great! Press GPS to verify your location");
+            }
+        }
+        if (event.getSource() == button2){
+            if ((gate1 == true) && (gate2 == false)){
+                String GPS = m.getGPS();
+                gate2 = m.GPSCheck(GPS);
+                if (gate2 == false){
+                    txt3.setText("GPS verification failed");
+                } else {
+                    txt3.setText("GPS verification success! Press sign to sign document");
+                }
+                
+                
+            }
+            
+        }
+        if (event.getSource() == button3){
+            if ((gate1 == true) && (gate2 == true) && (gate3 == false)){
+                EmbeddedSigningTest();
+            }
+            gate3 = true;
+            primaryStage.close();
         }
         
     }
