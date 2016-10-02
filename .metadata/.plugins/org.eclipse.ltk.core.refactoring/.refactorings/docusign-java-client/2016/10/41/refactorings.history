@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;DocuSignCredentials.java&apos; to &apos;docusign-java-client/src/main/java/(default package)&apos;&#x0A;- Original project: &apos;docusign-java-client&apos;&#x0A;- Destination element: &apos;docusign-java-client/src/main/java/(default package)&apos;&#x0A;- Original element: &apos;DocuSignCredentials.java&apos;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src\/main\/java&lt;" element1="/src\/test\/java&lt;{DocuSignCredentials.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1475399331431" units="1" version="1.0"/>
+</session>
