@@ -58,3 +58,39 @@
 2016-10-02 02:09:45,852 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/test/java added.
 2016-10-02 02:09:45,854 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-10-02 02:09:45,855 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/test/resources
+2016-10-02 05:26:18,314 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2016-10-02 05:26:22,571 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-02 05:26:22,573 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/main/resources
+2016-10-02 05:26:22,575 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-02 05:26:22,576 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/test/resources
+2016-10-02 05:26:22,587 [Worker-0] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-10-02 05:26:23,009 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.docusign:docusign-esign-java:2.0.2 @ /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/pom.xml.
+2016-10-02 05:26:23,582 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/main/java added.
+2016-10-02 05:26:23,590 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/test/java added.
+2016-10-02 05:26:23,773 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /docusign-java-client/src/main/java
+2016-10-02 05:26:23,774 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /docusign-java-client/src/test/java
+2016-10-02 05:26:24,513 [Worker-0] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2016-10-02 05:26:28,658 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/main/java added.
+2016-10-02 05:26:28,678 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-02 05:26:28,678 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/main/resources
+2016-10-02 05:26:28,680 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/test/java added.
+2016-10-02 05:26:28,682 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-02 05:26:28,683 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/test/resources
+2016-10-02 05:35:00,794 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/main/java added.
+2016-10-02 05:35:00,798 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-02 05:35:00,798 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/main/resources
+2016-10-02 05:35:00,800 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/test/java added.
+2016-10-02 05:35:00,802 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-02 05:35:00,802 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/test/resources
+2016-10-02 05:35:13,532 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/main/java added.
+2016-10-02 05:35:13,534 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-02 05:35:13,534 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/main/resources
+2016-10-02 05:35:13,535 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/test/java added.
+2016-10-02 05:35:13,536 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-02 05:35:13,536 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/test/resources
+2016-10-02 05:36:04,930 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/main/java added.
+2016-10-02 05:36:04,932 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-02 05:36:04,933 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/main/resources
+2016-10-02 05:36:04,934 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/test/java added.
+2016-10-02 05:36:04,935 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-02 05:36:04,935 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/test/resources
