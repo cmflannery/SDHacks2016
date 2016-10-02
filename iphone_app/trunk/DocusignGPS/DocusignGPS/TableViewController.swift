@@ -15,10 +15,16 @@ class TableViewController: UITableViewController, CLLocationManagerDelegate {
     
     // Firebase stuff
     var dbRef:FIRDatabaseReference!
+    
+    var requests = [Requests]()
+
 
     // static for now, can add user functionality later
     var userEmail: String = "cameron.m.flanery@gmail.com"
     var password: String = "sdhacks2016"
+    
+    //var myRootRef = Firebase(url:"https://docusign-gps.firebaseio.com/")
+    
     
     // Location Stuff
     let locationManager = CLLocationManager()
@@ -31,7 +37,10 @@ class TableViewController: UITableViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
         
         // Firebase
-        authenticateUsers()
+      //  authenticateUsers() // authentification no longer required
+        
+        dbRef = FIRDatabase.database().reference().child("requests")
+        startObservingDB()
         
         
         // Location Setup
@@ -48,6 +57,24 @@ class TableViewController: UITableViewController, CLLocationManagerDelegate {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     // Firebase Funcs
+    func startObservingDB() {
+        dbRef.observe(.value, with: { (snapshot:FIRDataSnapshot) in
+            var newRequests = [Requests]()
+            
+            for request in snapshot.children {
+                let requestObject = Requests(snapshot: request as! FIRDataSnapshot)
+                newRequests.append(requestObject)
+            }
+            
+            self.requests = newRequests
+            self.tableView.reloadSections(NSIndexSet(index: 0) as IndexSet , with: .automatic)
+            
+            
+        }) { (error:Error) in
+            print(error.localizedDescription)
+        }
+    }
+    
     // authentication
     func authenticateUsers(){
         FIRAuth.auth()?.signIn(withEmail: self.userEmail, password: self.password, completion: { (user: FIRUser?, error: Error?) in

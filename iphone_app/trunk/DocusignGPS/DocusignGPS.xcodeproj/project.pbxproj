@@ -17,6 +17,7 @@
 		768B1F781DA03F2F009D4447 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B1F771DA03F2F009D4447 /* TableViewController.swift */; };
 		768B1F7A1DA04A7A009D4447 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B1F791DA04A7A009D4447 /* TableViewCell.swift */; };
 		768B1F7E1DA04C81009D4447 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B1F7D1DA04C81009D4447 /* NewViewController.swift */; };
+		768B1F811DA09D4F009D4447 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B1F801DA09D4F009D4447 /* Requests.swift */; };
 		8C5AD0F8743430803A506185 /* Pods_DocusignGPS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12D9B72041A9964C69CDA8E /* Pods_DocusignGPS.framework */; };
 		AE873DA397A02E3DE7A9748D /* Pods_DocusignGPSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C915CC57775B16304A6F3080 /* Pods_DocusignGPSTests.framework */; };
 		F47997FFB9B13C812D61840B /* Pods_DocusignGPSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178DED406A4A95756FFC602C /* Pods_DocusignGPSUITests.framework */; };
@@ -60,6 +61,7 @@
 		768B1F771DA03F2F009D4447 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		768B1F791DA04A7A009D4447 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		768B1F7D1DA04C81009D4447 /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		768B1F801DA09D4F009D4447 /* Requests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		7DA037E6AB3B7422C8218DD7 /* Pods-DocusignGPSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocusignGPSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DocusignGPSTests/Pods-DocusignGPSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C915CC57775B16304A6F3080 /* Pods_DocusignGPSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DocusignGPSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE871BAFB23564771DCCFB29 /* Pods-DocusignGPS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocusignGPS.release.xcconfig"; path = "Pods/Target Support Files/Pods-DocusignGPS/Pods-DocusignGPS.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				768B1F771DA03F2F009D4447 /* TableViewController.swift */,
 				768B1F431DA03D50009D4447 /* AppDelegate.swift */,
+				768B1F7F1DA09D39009D4447 /* Models */,
 				768B1F471DA03D50009D4447 /* Main.storyboard */,
 				768B1F791DA04A7A009D4447 /* TableViewCell.swift */,
 				768B1F7D1DA04C81009D4447 /* NewViewController.swift */,
@@ -159,6 +162,14 @@
 				768B1F651DA03D50009D4447 /* Info.plist */,
 			);
 			path = DocusignGPSUITests;
+			sourceTree = "<group>";
+		};
+		768B1F7F1DA09D39009D4447 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				768B1F801DA09D4F009D4447 /* Requests.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		9D175E14FE248BA1EB528B64 /* Pods */ = {
@@ -444,6 +455,7 @@
 				768B1F7A1DA04A7A009D4447 /* TableViewCell.swift in Sources */,
 				768B1F441DA03D50009D4447 /* AppDelegate.swift in Sources */,
 				768B1F781DA03F2F009D4447 /* TableViewController.swift in Sources */,
+				768B1F811DA09D4F009D4447 /* Requests.swift in Sources */,
 				768B1F7E1DA04C81009D4447 /* NewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

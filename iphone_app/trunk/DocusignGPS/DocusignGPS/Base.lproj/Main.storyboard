@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -10,7 +11,7 @@
         <scene sceneID="ng3-Fk-tSm">
             <objects>
                 <navigationController id="Pbp-0u-rPC" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="H1Z-Qp-l0V">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="H1Z-Qp-l0V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.155545238696015" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -39,19 +40,24 @@
                                     <frame key="frameInset" width="375" height="49"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4W-8z-yBA">
-                                            <frame key="frameInset" minX="22" minY="14" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4W-8z-yBA">
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHJ-Tl-XTs">
-                                            <frame key="frameInset" minX="231" minY="9" width="108" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHJ-Tl-XTs">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="108" id="KZc-jT-mop"/>
+                                            </constraints>
                                             <state key="normal" title="View Request"/>
                                         </button>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="s4W-8z-yBA" firstAttribute="leading" secondItem="vAF-Qf-Hna" secondAttribute="leadingMargin" constant="14" id="2vM-9k-KoY"/>
+                                        <constraint firstItem="s4W-8z-yBA" firstAttribute="centerY" secondItem="vAF-Qf-Hna" secondAttribute="centerY" id="7Pk-WW-PJX"/>
+                                        <constraint firstItem="s4W-8z-yBA" firstAttribute="centerY" secondItem="pHJ-Tl-XTs" secondAttribute="centerY" id="Izo-gT-TR9"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="pHJ-Tl-XTs" secondAttribute="trailing" constant="28" id="sDJ-3N-TiL"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="titleLabel" destination="s4W-8z-yBA" id="B3H-Zo-WXV"/>
@@ -74,7 +80,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2PB-2G-Mx4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="94" y="296"/>
+            <point key="canvasLocation" x="93.599999999999994" y="295.50224887556226"/>
         </scene>
         <!--New View Controller-->
         <scene sceneID="fTi-pv-Daa">
