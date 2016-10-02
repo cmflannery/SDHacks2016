@@ -100,7 +100,8 @@ void loop() {
   userInput();
   GPS_data();
   GPS_write();
-  encrypt();
+  encrypt_data();
+//  delay(500);
 }
 
 
@@ -186,7 +187,7 @@ void GPS_write() {
   }
 }
 
-void encrypt() {
+void encrypt_data() {
   String keybuf = F("Hello Password");
   //  Serial.print(F(" Password : "));
   //  Serial.println(keybuf);

@@ -1,0 +1,60 @@
+2016-10-02 02:05:21,133 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2016-10-02 02:05:48,485 [Worker-11] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-10-02 02:05:50,043 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.jar
+2016-10-02 02:05:50,129 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.jar
+2016-10-02 02:05:50,225 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/2.8/maven-dependency-plugin-2.8.jar
+2016-10-02 02:05:50,502 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/2.8/maven-dependency-plugin-2.8.jar
+2016-10-02 02:05:50,573 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-gpg-plugin/1.5/maven-gpg-plugin-1.5.jar
+2016-10-02 02:05:50,636 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-gpg-plugin/1.5/maven-gpg-plugin-1.5.jar
+2016-10-02 02:05:50,691 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.4/maven-install-plugin-2.4.jar
+2016-10-02 02:05:50,738 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.4/maven-install-plugin-2.4.jar
+2016-10-02 02:05:50,796 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.7/maven-deploy-plugin-2.7.jar
+2016-10-02 02:05:50,843 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.7/maven-deploy-plugin-2.7.jar
+2016-10-02 02:05:50,915 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.jar
+2016-10-02 02:05:51,154 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.jar
+2016-10-02 02:05:51,484 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.docusign:docusign-esign-java:2.0.2 @ /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/pom.xml.
+2016-10-02 02:05:55,347 [Worker-11] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /docusign-java-client/src/main/java
+2016-10-02 02:05:55,353 [Worker-11] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /docusign-java-client/src/test/java
+2016-10-02 02:05:56,918 [Worker-11] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 8 sec
+2016-10-02 02:05:58,240 [Worker-13] INFO  o.e.m.i.discovery.MavenDiscovery - No lifecyle mapping found at jar:file:/var/folders/7b/0r_d6c494nvdqs1cgq5m91l80000gn/T/RemoteBundleDiscoveryStrategy5875723590556744417.tmp/org.eclipse.m2e.discovery.oss_catalog_1.6.jar_4590579286669908213.jar!/lifecycle%2Forg.eclipse.m2e.discovery.lifecyclemapping.m2e-egit.xml
+2016-10-02 02:05:58,240 [Worker-13] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-egit does not contain lifecycle mapping metadata
+2016-10-02 02:05:58,252 [Worker-13] INFO  o.e.m.i.discovery.MavenDiscovery - No lifecyle mapping found at jar:file:/var/folders/7b/0r_d6c494nvdqs1cgq5m91l80000gn/T/RemoteBundleDiscoveryStrategy5875723590556744417.tmp/org.eclipse.m2e.discovery.oss_catalog_1.6.jar_4590579286669908213.jar!/lifecycle%2Forg.eclipse.m2e.discovery.lifecyclemapping.m2e-subversive.xml
+2016-10-02 02:05:58,253 [Worker-13] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-subversive does not contain lifecycle mapping metadata
+2016-10-02 02:05:58,591 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-02 02:05:58,591 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/main/resources
+2016-10-02 02:05:58,593 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-02 02:05:58,594 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/test/resources
+2016-10-02 02:06:22,140 [Worker-6] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-10-02 02:06:22,141 [Worker-6] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-10-02 02:06:57,728 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2016-10-02 02:06:59,954 [Worker-7] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-10-02 02:07:01,574 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.docusign:docusign-esign-java:2.0.2 @ /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/pom.xml.
+2016-10-02 02:07:02,330 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/main/java added.
+2016-10-02 02:07:02,332 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/test/java added.
+2016-10-02 02:07:02,472 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /docusign-java-client/src/main/java
+2016-10-02 02:07:02,473 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /docusign-java-client/src/test/java
+2016-10-02 02:07:03,002 [Worker-7] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
+2016-10-02 02:07:05,754 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/main/java added.
+2016-10-02 02:07:05,780 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-02 02:07:05,780 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/main/resources
+2016-10-02 02:07:05,782 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/test/java added.
+2016-10-02 02:07:05,785 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-02 02:07:05,785 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/test/resources
+2016-10-02 02:07:13,863 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/main/java added.
+2016-10-02 02:07:13,866 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-02 02:07:13,866 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/main/resources
+2016-10-02 02:07:13,867 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/test/java added.
+2016-10-02 02:07:13,869 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-02 02:07:13,870 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/test/resources
+2016-10-02 02:08:51,697 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/main/java added.
+2016-10-02 02:08:51,699 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-02 02:08:51,699 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/main/resources
+2016-10-02 02:08:51,700 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/test/java added.
+2016-10-02 02:08:51,701 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-02 02:08:51,701 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/test/resources
+2016-10-02 02:09:45,849 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/main/java added.
+2016-10-02 02:09:45,851 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-02 02:09:45,851 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/main/resources
+2016-10-02 02:09:45,852 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/test/java added.
+2016-10-02 02:09:45,854 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-02 02:09:45,855 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/cflannery-MBP/Documents/SDHacks2016/docusign-java-client/src/test/resources
