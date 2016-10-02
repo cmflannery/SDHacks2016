@@ -36,9 +36,9 @@ import java.util.Set;
  * @author mike.roseleip
  */
 public class SdkUnitTests {
-    
-    public static final String UserName = “cameron.m.flannery@gmail.com”;
-    public static final String Password = “shacks2016”
+ 
+    public static final String UserName = "cameron.m.flannery@gmail.com";
+    public static final String Password = "sdhacks2016";
     public static final String IntegratorKey = "bac3326a-8237-4648-aac9-e055ab2cf7c7";
     
     public static final String BaseUrl = "https://demo.docusign.net/restapi";
@@ -224,8 +224,7 @@ public class SdkUnitTests {
             
             // This Url should work in an Iframe or browser to allow signing
             System.out.println("ViewUrl is " + viewUrl);
-            
-            
+
         }
         catch (ApiException ex)
         {
@@ -233,8 +232,8 @@ public class SdkUnitTests {
             Assert.assertEquals(null, ex);
         }
         
-    }
-    
+    }    
+
     private String createAuthHeaderCreds(String userName, String password, String integratorKey)
     {
         DocuSignCredentials dsCreds = new DocuSignCredentials(UserName, Password, IntegratorKey);
