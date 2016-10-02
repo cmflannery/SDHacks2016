@@ -36,6 +36,8 @@ import java.net.URI;
  *
  * @author mike.roseleip
  */
+
+
 public class SdkUnitTests {
  
     public static final String UserName = "cameron.m.flannery@gmail.com";
@@ -218,16 +220,18 @@ public class SdkUnitTests {
             
             ViewUrl viewUrl = envelopesApi.createRecipientView(loginInfo.getLoginAccounts().get(0).getAccountId(), envelopeSummary.getEnvelopeId(), recipientView);
             
-            
             Assert.assertNotNull(viewUrl);
             Assert.assertNotNull(viewUrl.getUrl());
             
             // This Url should work in an Iframe or browser to allow signing
-            System.out.println("ViewUrl is " + viewUrl);
-            
-            if(Desktop.isDesktopSupported())
-            {
-                Desktop.getDesktop().browse(new URI("http://www.example.com"));
+            System.out.println(viewUrl.url);
+
+            try {
+                Desktop desktop = java.awt.Desktop.getDesktop();
+                URI oURL = new URI(viewUrl.url);
+                desktop.browse(oURL);
+            } catch (Exception e) {
+                e.printStackTrace();
             }
             
         }

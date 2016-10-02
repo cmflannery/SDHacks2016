@@ -12,7 +12,7 @@ import io.swagger.annotations.ApiModelProperty;
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-18T18:11:15.675-07:00")
 public class ViewUrl   {
   
-  private String url = null;
+  public String url = null;
 
   
   /**
