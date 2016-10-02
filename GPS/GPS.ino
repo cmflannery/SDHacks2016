@@ -14,6 +14,8 @@
 #include <Adafruit_GPS.h>
 #include <SoftwareSerial.h>
 
+#include <xxtea-iot-crypt.h>
+
 // If you're using a GPS module:
 // Connect the GPS Power pin to 5V
 // Connect the GPS Ground pin to ground
@@ -53,6 +55,9 @@ void useInterrupt(boolean); // Func prototype keeps Arduino 0023 happy
 
 int d = 0; // user input while condition
 int incomingByte = 0;   // for incoming serial data
+int e = 0;
+float latitude, longitude;
+char buf1[25], buf2[25];
 
 void setup()
 {
@@ -85,7 +90,7 @@ void setup()
   // loop code a heck of a lot easier!
   useInterrupt(true);
 
-  delay(1000);
+//  delay(1000);
   // Ask for firmware version
   mySerial.println(PMTK_Q_RELEASE);
 }
@@ -95,6 +100,7 @@ void loop() {
   userInput();
   GPS_data();
   GPS_write();
+  encrypt();
 }
 
 
@@ -127,7 +133,7 @@ void useInterrupt(boolean v) {
 void userInput() { // wait for user inu=put before taking GPS data
   d = 0;
   //Serial.println("Write y: ");
-  
+
   while (d == 0) {
     // Wait for user input
     if (Serial.available() > 0) {
@@ -140,7 +146,7 @@ void userInput() { // wait for user inu=put before taking GPS data
         Serial.println("Input denied.");
       }
     }
-  }  
+  }
 }
 
 void GPS_data() {
@@ -168,12 +174,60 @@ void GPS_data() {
 
 void GPS_write() {
   if (GPS.fix) {
-    Serial.print(GPS.latitudeDegrees, 4);
-    Serial.print(", ");
-    Serial.println(GPS.longitudeDegrees, 4);
+    latitude = GPS.latitudeDegrees;
+    longitude = GPS.longitudeDegrees;
+    //    Serial.print(GPS.latitudeDegrees, 4);
+    //    Serial.print(", ");
+    //    Serial.println(GPS.longitudeDegrees, 4);
+    e = 0;
   } else {
     Serial.println("no fix");
+    e = 1;
   }
 }
 
+void encrypt() {
+  String keybuf = F("Hello Password");
+  //  Serial.print(F(" Password : "));
+  //  Serial.println(keybuf);
 
+  // Setup the Key - Once
+  if (!xxtea.setKey(keybuf))
+  {
+    Serial.println(" Assignment Failed!");
+    return;
+  }
+
+  String lat1 = dtostrf(latitude, 4, 4, buf1);
+  String long1 = dtostrf(longitude, 4, 4, buf2);
+  String plaintext =  lat1 + ", " + long1;
+  //  Serial.print(" Plain Text: ");
+  //  Serial.println(plaintext);
+
+  // Perform Encryption on the Data
+  String result = xxtea.encrypt(plaintext);
+  if (result == "-FAIL-")
+  {
+    Serial.println(" Encryption Failed!");
+    return;
+  }
+  else if (e == 0)
+  {
+    //    Serial.print(" Encrypted Data: ");
+    Serial.println(result);
+  }
+
+  //  // Perform Decryption
+  //  String result1 = xxtea.decrypt(result);
+  //  if (result1 == "-FAIL-")
+  //  {
+  //    Serial.println(" Decryption Failed!");
+  //    return;
+  //  }
+  //  else
+  //  {
+  //    Serial.print(" Decrypted Data: ");
+  //    Serial.println(result1);
+  //  }
+  //  delay(1000);
+}
